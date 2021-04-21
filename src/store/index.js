@@ -5,8 +5,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    progress: false
   },
   mutations: {
+    activaProgress (state) {
+      state.progress = true
+    },
+    desactivaProgress (state) {
+      state.progress = false
+    }
   },
   actions: {
   },
